@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: brock-room-check
+  labels:
+    app: brock-room-check
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: brock-room-check
