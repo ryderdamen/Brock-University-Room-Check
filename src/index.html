@@ -9,79 +9,88 @@
 Designed and built by Ryder Damen, 2017
 -->
 <html lang="en">
-  <head>
+
+<head>
 	<title>Room Lookup - BrockU</title>
 	<meta name="description" content="A way to look up classes currently happening at Brock University">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel='stylesheet' media='screen and (max-width: 800px)' href='mobile.css' />
 	<link rel='stylesheet' media='screen and (max-device-width: 800px)' href='mobile.css' />
-	   <meta property='og:image' content='preview.jpg'/>
-	   <link rel="image_src" href="preview.jpg" / >
-  </head>
+	<meta property='og:image' content='preview.jpg' />
+	<link rel="image_src" href="preview.jpg" />
+</head>
 
-  <body>
-	  <div class="header">
-			<h1>Brock Room Lookup</h1>
-			<p id='message'>Good luck on exams, Badgers! The spring schedule will be live in May.</p>
-	  </div>
-	  <div class="container">  
-	<div class="content">
-	
-	<form class="form" action="classes.php">
-		<div><label>Choose a building:</label></div>
-		<div>
-			<select class="dropdown rounded" name="building">
-			<option value="AS">Academic South</option>
-			<option value="CA">Cairns</option>
-			<option value="DHOWES">DHOWES (Don't enter room number)</option>
-			<option value="EA">East Academic</option>
-			<option value="GL">Glenridge Building</option>
-			<option value="HC">Hamilton Campus Building</option>
-			<option value="IC">International Centre</option>
-			<option value="IH">Inniskillin Hall</option>
-			<option value="MCA">Mack Chown A</option>
-			<option value="MCB">Mack Chown B</option>
-			<option value="MCC">Mack Chown C</option>
-			<option value="MCD">Mack Chown D</option>
-			<option value="MCE">Mack Chown E</option>
-			<option value="MCG">Mack Chown G</option>
-			<option value="MCH">Mack Chown H</option>
-			<option value="MCJ">Mack Chown J</option>
-			<option value="MW">Marilyn I Walker SFPA (Downtown Campus)</option>
-			<option value="PL">Plaza</option>
-			<option value="ST">The Tower</option>
-			<option value="THSOS">Sean O' Sullivan (Don't enter room number)</option>
-			<option value="TH">Thistle</option>
-			<option value="TA">Taro Hall</option>
-			<option value="WH">Welch Hall</option>
-			<option value="WC">Walker Complex</option>
-		 </select></div> 
-		 
-		 <div><label>Enter a room number:</label></div>
-	  <div><input type="text" class="textbox rounded" name="number" placeholder="Example: 204"></div>
-	  
-	  <div><label>Pick a date</label></div>
-		<div>
-			<select class="dropdown rounded" name="day">
-			<option value="today">Today</option>
-			<option value="M">Mondays</option>
-			<option value="T">Tuesdays</option>
-			<option value="W">Wednesdays</option>
-			<option value="R">Thursdays</option>
-			<option value="F">Fridays</option>
-			<option value="S">Saturdays</option>
-			<option value="Su">Sundays</option>
-		 </select></div>
+<body>
+	<div class="header">
+		<h1>Brock Room Lookup</h1>
+		<p id='message'>This is an archived project from the Fall-Winter semester of 2016 at Brock University.</p>
+		<p id='message'>For more information,
+			<a href="https://github.com/ryderdamen/brock_room_check" target="_blank" rel="noopener">
+				check out the code
+			</a>, or
+			<a href="https://twitter.com/ryderdamen" target="_blank" rel="noopener">send me a message</a>.</p>
+	</div>
+	<div class="container">
+		<div class="content">
 
-	  <div><button type="submit" class="button rounded">Submit</button></div>
-	</form>
+			<form class="form" action="classes.php">
+				<div><label>Choose a building:</label></div>
+				<div>
+					<select class="dropdown rounded" name="building">
+						<option value="AS">Academic South</option>
+						<option value="CA">Cairns</option>
+						<option value="DHOWES">DHOWES (Don't enter room number)</option>
+						<option value="EA">East Academic</option>
+						<option value="GL">Glenridge Building</option>
+						<option value="HC">Hamilton Campus Building</option>
+						<option value="IC">International Centre</option>
+						<option value="IH">Inniskillin Hall</option>
+						<option value="MCA">Mack Chown A</option>
+						<option value="MCB">Mack Chown B</option>
+						<option value="MCC">Mack Chown C</option>
+						<option value="MCD">Mack Chown D</option>
+						<option value="MCE">Mack Chown E</option>
+						<option value="MCG">Mack Chown G</option>
+						<option value="MCH">Mack Chown H</option>
+						<option value="MCJ">Mack Chown J</option>
+						<option value="MW">Marilyn I Walker SFPA (Downtown Campus)</option>
+						<option value="PL">Plaza</option>
+						<option value="ST">The Tower</option>
+						<option value="THSOS">Sean O' Sullivan (Don't enter room number)</option>
+						<option value="TH">Thistle</option>
+						<option value="TA">Taro Hall</option>
+						<option value="WH">Welch Hall</option>
+						<option value="WC">Walker Complex</option>
+					</select></div>
 
-	</div></div>
-   
-	<div class="footer">
-		<div>
-			<p>Designed by <a href="http://ryderdamen.com">Ryder Damen</a>.</p>
+				<div><label>Enter a room number:</label></div>
+				<div><input type="text" class="textbox rounded" name="number" placeholder="Example: 204"></div>
+
+				<div><label>Pick a date</label></div>
+				<div>
+					<select class="dropdown rounded" name="day">
+						<option value="today">Today</option>
+						<option value="M">Mondays</option>
+						<option value="T">Tuesdays</option>
+						<option value="W">Wednesdays</option>
+						<option value="R">Thursdays</option>
+						<option value="F">Fridays</option>
+						<option value="S">Saturdays</option>
+						<option value="Su">Sundays</option>
+					</select></div>
+
+				<div><button type="submit" class="button rounded">Submit</button></div>
+			</form>
+
 		</div>
 	</div>
-  </body>
+
+	<div class="footer">
+		<div>
+			<p>Designed by <a href="https://ryderdamen.com">Ryder Damen</a>.</p>
+			<p>This is an archived site built with PHP, running in kubernetes. Message me for the details.</p>
+		</div>
+	</div>
+</body>
+
 </html>
