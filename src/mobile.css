@@ -1,0 +1,228 @@
+/*
+	Designed by Ryder Damen, 2017
+	ryderdamen.com
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+	height: 100%;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  	background-image: url(bg.jpg);
+  	background-repeat: no-repeat;
+  	background-position: center top;
+  	background-size: cover;
+  	background-color: #14A6CE;
+  	background-attachment: fixed;
+  	color: #fff;
+  	margin: 0;
+  	
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  	
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3em;
+	text-align: center;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+
+	font-size: 1em;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
+
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+a:hover {
+	background-color: white;
+	color: #14A6CE;
+}
+
+#checkagain {
+	border-width: 1px;
+	border-color: #fff;
+	border-style: solid;
+	padding: 10px;
+	font-size: 1em;
+	height: 10%;
+	margin-top: 10%;
+	width: 50%;
+}
+
+#checkagain:hover {
+	border-width: 1px;
+	border-color: #fff;
+	border-style: solid;
+	padding: 10px;
+	background-color: white;
+	color: #14A6CE;
+}
+
+
+.container {
+	width: 100%;
+	min-width: 500px;
+}
+
+.content {
+width: 90%;
+margin: auto;
+}
+
+.header {
+	min-width: 500px;
+	margin-bottom: 10%;
+}
+
+.footer {
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	background-color: transparent;
+	position: absolute;
+	text-align: center;
+}
+
+.footer p {
+	font-size: 1em;
+}
+
+.footer a {
+	font-size: 1em;
+}
+
+.table {
+	width: 100%;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	border-collapse: collapse;
+	margin-bottom: 50px;
+
+}
+
+tr {
+	text-align: left;
+	vertical-align: middle;
+	height: 50px;
+		border-bottom-color: #fff;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+
+th {
+	font-family: 'Roboto', sans-serif;
+		font-size: 1em;
+}
+
+td {
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+
+form {
+}
+
+label {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5em;
+}
+
+.button {
+	background-color: transparent;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5em;
+	width: 50%;
+	height: 3em;
+	min-width: 100px;
+}
+
+.button:hover {
+	background-color: #fff;
+	color: #14A6CE;
+}
+
+.dropdown {
+	background-color: transparent;
+	height: 3em;
+	color: #fff;
+	width: 100%;
+	margin-bottom: 10%;
+	border-width: 2px;
+
+}
+
+.textbox{
+	background-color: transparent;
+	color: #fff;
+	height: 3em;
+	width: 100%;
+	margin-bottom: 10%;
+	padding-left: 10px;
+}
+
+.rounded {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 2px;
+   border-color: #fff;
+   border-style: solid;
+   font-size: 3em;
+   height: 10vh;
+   
+}
+
+
+/*To adjust the colour of the placeholder text*/
+
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 0.5;
+    padding-left: 10px;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #fff;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #fff;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
